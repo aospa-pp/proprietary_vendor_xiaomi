@@ -75,7 +75,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/odm/firmware/evass.mbn:$(TARGET_COPY_OUT_ODM)/firmware/evass.mbn \
     vendor/xiaomi/sm8550-common/proprietary/odm/firmware/evass.mdt:$(TARGET_COPY_OUT_ODM)/firmware/evass.mdt \
     vendor/xiaomi/sm8550-common/proprietary/odm/firmware/vpu30_4v.mbn:$(TARGET_COPY_OUT_ODM)/firmware/vpu30_4v.mbn \
+    vendor/xiaomi/sm8550-common/proprietary/system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc \
     vendor/xiaomi/sm8550-common/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
+    vendor/xiaomi/sm8550-common/proprietary/system_ext/etc/permissions/com.qti.qcc.vendor_qcc.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.qcc.vendor_qcc.xml \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__3.0.0_0.0__eai_2.10_enpu3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__3.0.0_0.0__eai_2.10_enpu3.pmd \
@@ -175,6 +177,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
+    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-aidl-service-qti.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/android.hardware.identity-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.identity-service-qti.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/android.hardware.nfc@1.2-service-st.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service-st.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/android.hardware.security.keymint-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-qti.rc \
@@ -212,7 +215,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/qmipriod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/qms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qms.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/qvrd_vndr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qvrd_vndr.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/qwesd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qwesd.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/sxrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/sxrd.rc \
@@ -310,12 +312,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/qcril_database/upgrade/other/8_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/8_version_update_ecc_table.sql \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/qcril_database/upgrade/other/9_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/9_version_update_ecc_table.sql \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/qguard.json:$(TARGET_COPY_OUT_VENDOR)/etc/qguard.json \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/qvr/cfg/519/0/65536/mtpkailua.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/519/0/65536/mtpkailua.txt \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/qvr/cfg/519/0/65536/mtpkailua_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/519/0/65536/mtpkailua_6dof_config.xml \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/qvr/cfg/519/0/65536/mtpkailua_qvr_3dof_tracker_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/519/0/65536/mtpkailua_qvr_3dof_tracker_config.txt \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/qvr/qvr_hid_device_list.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/qvr_hid_device_list.txt \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/qvr/qvr_usb_device_list.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/qvr_usb_device_list.txt \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/qvr/qvrservice_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/qvrservice_config.txt \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
@@ -336,7 +332,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/seccomp_policy/qesdk.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qesdk.policy \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/seccomp_policy/qms.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qms.policy \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/seccomp_policy/qvr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qvr@2.0.policy \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/seccomp_policy/qwesd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qwesd@2.0.policy \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/seccomp_policy/sxr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/sxr@2.0.policy \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
@@ -416,8 +411,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/firmware/vpu33_4v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu33_4v_unsigned.mbn
 
 PRODUCT_PACKAGES += \
-    libqesdk2_0 \
-    libqesdk_manager \
     android.hardware.secure_element@1.0-impl \
     btaudio_offload_if \
     c2.dolby.client \
@@ -442,6 +435,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.1-impl-qti \
     android.hardware.camera.provider@2.7-impl-vcamera \
     android.hardware.gatekeeper@1.0-impl-qti \
+    android.hardware.gnss-aidl-impl-qti \
     audio.bluetooth_qti.default \
     audio.primary.kalama_sm8550 \
     com.dsi.ant@1.0-impl \
@@ -481,7 +475,6 @@ PRODUCT_PACKAGES += \
     libApeSwDec \
     libCOSNet_spatial_qnn_quantized \
     libDecoderProcessor \
-    libDspIOProxy_stub \
     libEncoderProcessor \
     libEvrcSwCodec \
     libFace3DTA \
@@ -493,7 +486,6 @@ PRODUCT_PACKAGES += \
     libGPTEE_vendor \
     libGPreqcancel \
     libGPreqcancel_svc \
-    libMapService \
     libMiVDR \
     libPeripheralStateUtils \
     libPlatformValidatorShared \
@@ -517,7 +509,6 @@ PRODUCT_PACKAGES += \
     libQtiRilLoadable \
     libSNPE \
     libSNPESample \
-    libScenescape \
     libSensorsInterface \
     libSnpeDspV65Stub \
     libSnpeDspV66Stub \
@@ -526,7 +517,6 @@ PRODUCT_PACKAGES += \
     libSnpeHtpV68Stub \
     libSnpeHtpV69Stub \
     libSnpeHtpV73Stub \
-    libStereoRectifyWrapper \
     libTouchInputVM \
     libTrustedInput \
     libTrustedInputTZ \
@@ -615,7 +605,6 @@ PRODUCT_PACKAGES += \
     libesesbprovision \
     libeva \
     libeva_util \
-    libeye_tracking_dsp_sample_stub \
     libeyecare \
     libface3d_dev \
     libfastcvdsp_stub \
@@ -630,7 +619,6 @@ PRODUCT_PACKAGES += \
     libgnsspps \
     libgps.utils \
     libgpt \
-    libhalide_hexagon_host \
     libhdr_hbm \
     libhdrdynamic \
     libhdrdynamicootf \
@@ -763,6 +751,8 @@ PRODUCT_PACKAGES += \
     libqdi \
     libqdp \
     libqdpr \
+    libqesdk2_0 \
+    libqesdk_manager \
     libqisl \
     libqmi \
     libqmi_cci \
@@ -785,17 +775,6 @@ PRODUCT_PACKAGES += \
     libqtikeymaster4 \
     libqtikeymint \
     libquickcamera \
-    libqvr_cam_cdsp_driver_stub \
-    libqvr_cdsp_driver_stub \
-    libqvr_eyetracking_plugin \
-    libqvr_hostcontroller_plugin \
-    libqvrcamera_client.qti \
-    libqvrcameraplayback \
-    libqvrservice \
-    libqvrservice_client.qti \
-    libqvrservice_ov7251_hvx_tuning \
-    libqvrservice_ov9282_hvx_tuning \
-    libqvrservice_v4l_ov7251_hvx_tuning \
     librcc \
     libresampler \
     libril-db \
@@ -858,7 +837,6 @@ PRODUCT_PACKAGES += \
     libthermalclient \
     libthreadutils \
     libtime_genoff \
-    libtracker_6dof_impl \
     libtrustedapploader \
     libvideotxr \
     libvideoutils \
@@ -1115,6 +1093,16 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.sensor.citsensorservice@1.1 \
     vendor.xiaomi.sensor.citsensorservice@2.0 \
     vendor.xiaomi.sensor.communicate@1.0 \
+    libqcc \
+    libqcc_file_agent_sys \
+    libqccdme \
+    libqccfileservice \
+    vendor.qti.hardware.qccsyshal@1.0 \
+    vendor.qti.hardware.qccsyshal@1.1 \
+    vendor.qti.hardware.qccsyshal@1.2-halimpl \
+    vendor.qti.hardware.qccsyshal@1.2 \
+    vendor.qti.hardware.qccvndhal@1.0 \
+    vendor.qti.qccvndhal_aidl-V1-ndk \
     consumerir.qcom \
     displayfeature.default \
     vendor.xiaomi.hw.touchfeature@1.0-impl \
@@ -1170,6 +1158,7 @@ PRODUCT_PACKAGES += \
     TrustZoneAccessService \
     HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
+    QCC \
     QcomSoterService \
     com.android.hotwordenrollment.common.util \
     android.hardware.gnss-aidl-service-qti.xml \
@@ -1246,13 +1235,13 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.7-virtual-camera-service \
     android.hardware.drm-service.widevine \
     android.hardware.gatekeeper@1.0-service-qti \
+    android.hardware.gnss-aidl-service-qti \
     android.hardware.identity-service-qti \
     android.hardware.nfc@1.2-service-st \
     android.hardware.security.keymint-service-qti \
     dolbycodec2 \
     qconfigservice \
     qcrilNrd \
-    qvrservice \
     sxrservice \
     vendor.dolby.hardware.dms@2.0-service \
     vendor.dolby.media.c2@1.0-service \
@@ -1315,11 +1304,6 @@ PRODUCT_PACKAGES += \
     qti \
     qtigetprop \
     qtisetprop \
-    qvrcameratest \
-    qvrdatacapture \
-    qvrdatalogger \
-    qvrdatauploader \
-    qvrservicetest \
     qwesd \
     rmt_storage \
     sensors.qti \
@@ -1341,6 +1325,7 @@ PRODUCT_PACKAGES += \
     wifidisplayhalservice \
     xtra-daemon \
     xtwifi-client \
+    qccsyshal@1.2-service \
     fidoca \
     vendor.nxp.hardware.nfc@2.0-service \
     vendor.xiaomi.hw.touchfeature@1.0-service \
