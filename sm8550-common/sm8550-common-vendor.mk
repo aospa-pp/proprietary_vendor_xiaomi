@@ -919,6 +919,7 @@ PRODUCT_PACKAGES += \
     libswgamedap \
     libswspatializer \
     libswvqe \
+    libv4a_re \
     libvisualizer \
     libvolumelistener \
     vendor.dolby.hardware.dms@2.0-impl \
