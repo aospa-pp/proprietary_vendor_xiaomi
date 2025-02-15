@@ -7147,23 +7147,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libsxrservice",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsxrservice.so"],
-			shared_libs: ["libcutils", "libui", "liblog", "libutils", "libEGL", "libGLESv2", "libusbhost", "libnativewindow", "android.hardware.audio@7.0", "android.hardware.audio.common@7.0", "android.hardware.audio.common@7.0-enums", "libtinyalsa", "libfmq", "qti.video.utils.videobufferlayout", "libhidlbase", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libsynergy_loc_api",
 	owner: "xiaomi",
 	strip: {
@@ -13930,24 +13913,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "sxrservice",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/sxrservice"],
-			shared_libs: ["vendor.qti.hardware.qxr-V1-ndk", "libbinder_ndk", "libbase", "liblog", "libutils", "libcutils", "libbinder", "libhardware", "libnativewindow", "libavservices_minijail", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "vendor.dolby.hardware.dms@2.0-service",
 	owner: "xiaomi",
 	target: {
@@ -14573,23 +14538,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/mmid"],
 			shared_libs: ["libc", "libcutils", "libutils", "liblog", "libc++", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "modemManager",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/modemManager"],
-			shared_libs: ["libavservices_minijail", "libcutils", "libdiag", "liblog", "libhidlbase", "libbinder", "libjsoncpp", "libqesdk2_0", "libqti_vndfwk_detect_vendor", "libutils", "vendor.qti.data.factory@2.7_vendor", "vendor.qti.hardware.data.lce@1.0_vendor", "vendor.qti.latency@2.0_vendor", "vendor.qti.latency@2.1_vendor", "vendor.qti.latency@2.2_vendor", "vendor.qti.hardware.data.flow@1.0_vendor", "vendor.qti.hardware.data.flow@1.1_vendor", "libbase", "libcrypto", "libnl", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
